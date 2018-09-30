@@ -1,0 +1,547 @@
+/*****************************/
+/*          UTILS           */
+/***************************/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;    
+}
+.color{
+    background-color: #660033;
+    color: whitesmoke;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.style {
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out; 
+}
+
+/********************************************/
+/*          LOGO RESAUX SOCIAUX            */
+/******************************************/
+
+.face {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  background-color: #660033;
+  float:right;
+}
+.face img {
+   padding: 5px;
+}
+.res img{
+    -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.res:hover img{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+/*************************************************/
+/*          Adaptation Resaux sociaux           */
+/***********************************************/
+
+@media screen and
+(min-width: 700px){
+    .face img{
+        padding: 15px;
+     }
+}
+
+/*****************************/
+/*          TITRE           */
+/***************************/
+
+.titre{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+
+}
+.titre h1{
+   width: 70%;
+   font-family: fantasy;
+   padding-left: 40px;
+   padding-right: 10px;
+}
+
+/*****************************/
+/*          NAV BAR         */
+/***************************/
+
+.menus{
+    text-align: right;
+    font-size: 30px;
+}
+.menus i{
+    padding: 10px;
+    border: 2px dashed whitesmoke;
+}
+.kiwi ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: none;   
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.kiwi a{
+    display: block;
+    padding: 20px 0;
+    text-align: right;
+}
+.kiwi ul.show{
+    display:block;   
+}
+li a:hover{
+    background-color: #ff6633;
+    padding: 20px;
+}
+
+/*****************************************/
+/*          Adaptation NAV BAR          */
+/***************************************/
+
+@media screen and
+(min-width: 700px){
+    header ul{
+    display: flex;
+    justify-content: flex-end;
+    }
+    .menus{
+        display: none;   
+    }
+    .kiwi ul{
+        display: flex;   
+    }
+    .kiwi a{
+        padding: 20px;
+    }
+}
+
+/**************************************************************************************/
+
+/*********************************************/
+/*          Texte Premiére maquette         */
+/*******************************************/
+
+main.text{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    float: left;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+.p {
+    line-height:25px;
+}
+main h1{
+    color: #660033;
+    padding: 30px 0px;
+    text-align: center;
+}
+.p{
+    display:none;
+}
+/*********************************/
+/*          A Propos            */
+/*******************************/
+
+
+main.texte{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+.A{
+    line-height: 25px;
+}
+
+/**********************************/
+/*          Load More            */
+/********************************/
+
+#loadMore {
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    background-color: #660033;
+    color: whitesmoke;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: whitesmoke;
+    box-shadow: 0 1px 1px whitesmoke;
+
+}
+#loadMore:hover {
+    background-color: #ff6633;
+    color:  whitesmoke;
+}
+
+
+/**********************************/
+/*     Load More Adaptation      */
+/********************************/
+
+@media screen and
+(min-width: 700px){
+    #loadMore{
+        display: none;
+    }
+    .p{ 
+        display: block;
+    }
+}
+
+/***********************************/
+/*        Adaptation Text         */
+/*********************************/
+
+@media screen and 
+(min-width:500px){
+    main.text{
+        min-height: 300px;
+    }
+    /* A Propos */
+    main.texte{ 
+        width: 50%;
+        min-height: 300px;
+    } 
+}
+
+/*****************************/
+/*          LOGO            */
+/***************************/
+
+main.logo{ 
+    min-height: 620px;
+    float: right;
+    width: 43%;
+    display: flex;
+    align-items: center;
+}
+main.logo2{   
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+main.logo img{   
+    width: 100%;
+} 
+main.logo2 img{   
+    width: 65%;
+} 
+/*************************************/
+/*          Adaptation LOGO         */
+/***********************************/
+
+@media screen and 
+(min-width:500px){ 
+    main.logo img {
+        width: 100%;    
+    } 
+    main.logo{
+        min-height:500px;
+    }  
+/**********LOGO A PROPOS*********/
+    main.logo2 img {
+        width: 60%;    
+    } 
+    main.logo2{
+        margin:0;
+        min-height:485px;
+        float: left;
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and 
+(min-width:720px){ 
+    main.logo2 img {
+        width: 75%;    
+    } 
+    main.logo2{
+        min-height:500px;
+    }
+}
+/**************************************************************************************/
+
+.clear{
+    clear: both;
+}
+
+/**************************************************************************************/
+
+
+/*********************************************/
+/*          Zone 2 avec les Images          */
+/*******************************************/
+
+.zone_2{
+    height: 200px;
+    background-color: #ff6633;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+/*********************************************/
+/*          Adaptation background           */
+/*******************************************/
+
+@media screen and 
+(min-width:600px){
+    .zone_2{
+        height: 400px;
+    }
+}
+.img1{
+    float: left;
+    width: 40%;
+}
+.img2{
+    float: right;
+    width: 40%;
+}
+
+/*****************************************/
+/*          Adaptation Image 1 et 2     */
+/***************************************/
+
+@media screen and 
+(max-width:920px){
+    .img1 .img2{
+        width: 40%;
+        height: auto;
+    }
+}
+
+/*****************************************/
+/*            Zoom des images           */
+/***************************************/
+
+@media screen and 
+(min-width:700px){
+.img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.img:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+}
+
+/**************************************************************************************/
+
+footer{
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+/*************************************************************************************/
+
+/*****************************************/
+/*          Slider full CSS             */
+/***************************************/
+
+div#slider{
+    margin: 10px;
+    width: 80%;
+    max-width: 100px;
+}
+div#slider figure{
+   position: relative;
+   width: 75%;
+   margin: 0;
+   padding:0;
+   font-size: 0;                                                         
+   text-align: left; 
+}
+div#slider figure img{
+   width: 20%;
+   height: auto;
+}
+div#slider{
+    width :80%;
+    max-width: 1000px;
+    overflow: hidden;
+}
+@keyframes slidy{
+    0% {left : 0%;}
+    20% {left : 0%;}
+    25% {left : -100%;}
+    45% {left : -100%;}
+    50% {left : -200%;}
+    70% {left : -200%;}
+    75% {left : -300%;}
+    95% {left : -300%;}
+    100%{left : -400%;}
+}
+div#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size:0;
+    left: 0;
+    text-align: left;
+    animation : 15s slidy infinite;
+}
+/*****************************************/
+/*           Portfolio mobile           */
+/***************************************/
+.image {
+    display: block;
+    width: 80%;
+    height: 75%;
+    margin-bottom: 6%;
+  }
+.overtexte {
+      display:none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+/*****************************************/
+/*           Portfolio PC               */
+/***************************************/
+@media screen and 
+(min-width:700px){
+    .portfolio{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:4%;
+    }
+    .container {
+    position: relative;
+    display: block;
+    width: 30%;
+    }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: #FFFFFF;
+  }
+  .container:hover .overlay {
+    opacity: 0.7;
+  }
+  .overtexte {
+    display: inline;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+/* Contact */
+/**********/
+/*  MAPS */
+/********/
+.map{
+    height: 200px;
+    width: 50%;
+    border: 0;
+}
+.Contactext{
+  line-height: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: justify
+}
+.Ctct{
+    width: 100%;
+}
+.border{
+    border: 2px dashed #660033;
+}
+.heightctc{
+    font-size: 120%;
+    padding: 10px;
+}
+.télmap{
+    display: flex;
+    justify-content: center;
+}
+.zone_ctc{
+    padding-top: 8%;
+}
+/* Contact Adaptation */
+/*********************/
+/*  MAPS Adaptation */
+/*******************/
+@media screen and
+(min-width:700px){
+    .map{
+        height: 500px;
+        width: 100%;
+        border: 0;
+    }
+    .Contactext{
+        line-height: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .Ctct{
+          width: 50%;
+          float: left;
+      }
+      .border{
+          border: 2px dashed #660033;
+          max-width: 75%;
+      }
+      .heightctc{
+          font-size: 120%;
+          padding: 10px;
+      }
+      
+}
