@@ -7,10 +7,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
     margin: 0;
-=======
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
 }
 a{
     text-decoration: none;
@@ -61,11 +58,7 @@ a{
 
 @media screen and
 (min-width: 700px){
-<<<<<<< HEAD
     .face img{
-=======
-    .face img {
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
         padding: 15px;
      }
 }
@@ -152,28 +145,17 @@ li a:hover{
 /*******************************************/
 
 main.text{
-<<<<<<< HEAD
     margin-right: 10px;
     margin-left: 10px;
     width: 50%;
     float: left;
     align-items: center;
-=======
-    min-height: 300px;
-    width: 50%;
-    float: left;
-    display: flex;
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
     flex-direction: column;
     text-align: justify;
 }
 .p {
     line-height:25px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
 main h1{
     color: #660033;
     padding: 30px 0px;
@@ -182,7 +164,6 @@ main h1{
 .p{
     display:none;
 }
-<<<<<<< HEAD
 /*********************************/
 /*          A Propos            */
 /*******************************/
@@ -207,14 +188,6 @@ main.texte{
 
 #loadMore {
     width: 75%;
-=======
-
-/*********************************/
-/*          Load More           */
-/*******************************/
-
-#loadMore {
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
     padding: 10px;
     text-align: center;
     background-color: #660033;
@@ -232,11 +205,7 @@ main.texte{
 
 
 /**********************************/
-<<<<<<< HEAD
 /*     Load More Adaptation      */
-=======
-/*          Load More            */
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
 /********************************/
 
 @media screen and
@@ -244,13 +213,8 @@ main.texte{
     #loadMore{
         display: none;
     }
-<<<<<<< HEAD
     .p{ 
         display: block;
-=======
-    .p{
-        display: flex;
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
     }
 }
 
@@ -262,14 +226,11 @@ main.texte{
 (min-width:500px){
     main.text{
         min-height: 300px;
-<<<<<<< HEAD
     }
     /* A Propos */
     main.texte{ 
         width: 50%;
         min-height: 300px;
-=======
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
     } 
 }
 
@@ -280,16 +241,12 @@ main.texte{
 main.logo{ 
     min-height: 620px;
     float: right;
-<<<<<<< HEAD
     width: 43%;
     display: flex;
     align-items: center;
 }
 main.logo2{   
     margin: 10px;
-=======
-    width: 50%;
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
     display: flex;
     align-items: center;
 }
@@ -297,13 +254,9 @@ main.logo2{
 main.logo img{   
     width: 100%;
 } 
-<<<<<<< HEAD
 main.logo2 img{   
     width: 65%;
 } 
-=======
-
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
 /*************************************/
 /*          Adaptation LOGO         */
 /***********************************/
@@ -315,7 +268,6 @@ main.logo2 img{
     } 
     main.logo{
         min-height:500px;
-<<<<<<< HEAD
     }  
 /**********LOGO A PROPOS*********/
     main.logo2 img {
@@ -337,16 +289,6 @@ main.logo2 img{
         width: 75%;    
     } 
     main.logo2{
-=======
-    }
-}
-@media screen and 
-(min-width:720px){ 
-    main.logo img {
-        width: 75%;    
-    } 
-    main.logo{
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
         min-height:500px;
     }
 }
@@ -402,7 +344,6 @@ main.logo2 img{
     }
 }
 
-<<<<<<< HEAD
 /*****************************************/
 /*            Zoom des images           */
 /***************************************/
@@ -421,8 +362,6 @@ main.logo2 img{
 }
 }
 
-=======
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
 /**************************************************************************************/
 
 footer{
@@ -431,7 +370,6 @@ footer{
     display: flex;
     flex-direction: column;
 }
-<<<<<<< HEAD
 /*************************************************************************************/
 
 /*****************************************/
@@ -440,15 +378,6 @@ footer{
 
 div#slider{
     margin: 10px;
-=======
-/*****************************************************************************************/
-
-/*****************************************/
-/*          Slider full CSS     */
-/***************************************/
-
-div#slider{
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
     width: 80%;
     max-width: 100px;
 }
@@ -480,10 +409,6 @@ div#slider{
     95% {left : -300%;}
     100%{left : -400%;}
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
 div#slider figure{
     position: relative;
     width: 500%;
@@ -494,7 +419,6 @@ div#slider figure{
     text-align: left;
     animation : 15s slidy infinite;
 }
-<<<<<<< HEAD
 /*****************************************/
 /*           Portfolio mobile           */
 /***************************************/
@@ -621,5 +545,3 @@ div#slider figure{
       }
       
 }
-=======
->>>>>>> 89a04afc615e2615d5ba1a9ce387690b47325d60
